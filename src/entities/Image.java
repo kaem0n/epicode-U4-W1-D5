@@ -12,6 +12,12 @@ public class Image extends MultimediaElement implements Brightness {
         this.brightness = 5;
     }
 
+    // GETTERS & SETTERS
+    @Override
+    public int getBrightness() {
+        return brightness;
+    }
+
     // METHODS
     public void show() {
         System.out.println(this.getFileName() + " showing...; " + this.brightnessLevel());

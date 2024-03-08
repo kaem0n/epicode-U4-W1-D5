@@ -5,4 +5,5 @@ public interface PlayVolume {
     void volumeUp();
     void volumeDown();
     String volumeLevel();
+    int getVolume();
 }

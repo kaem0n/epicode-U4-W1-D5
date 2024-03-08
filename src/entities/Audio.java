@@ -14,6 +14,12 @@ public class Audio extends MultimediaElement implements PlayVolume {
         this.seconds = seconds;
     }
 
+    // GETTERS & SETTERS
+    @Override
+    public int getVolume() {
+        return volume;
+    }
+
     // METHODS
     @Override
     public void play() {

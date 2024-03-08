@@ -17,6 +17,17 @@ public class Video extends MultimediaElement implements Brightness, PlayVolume {
         this.seconds = seconds;
     }
 
+    // GETTERS & SETTERS
+    @Override
+    public int getBrightness() {
+        return brightness;
+    }
+
+    @Override
+    public int getVolume() {
+        return volume;
+    }
+
     // METHODS
     @Override
     public void brightnessUp() {
