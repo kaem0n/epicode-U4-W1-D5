@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="initial project structure created">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added methods to interfaces and coded MultimediaElement and Video classes behavior">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Brightness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Brightness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/MultimediaElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/MultimediaElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/PlayVolume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/PlayVolume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Video.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709889201666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added methods to interfaces and coded MultimediaElement and Video classes behavior">
+      <option name="closed" value="true" />
+      <created>1709894173570</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894173570</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project start" />
     <MESSAGE value="initial project structure created" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial project structure created" />
+    <MESSAGE value="added methods to interfaces and coded MultimediaElement and Video classes behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="added methods to interfaces and coded MultimediaElement and Video classes behavior" />
   </component>
 </project>
