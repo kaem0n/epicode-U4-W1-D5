@@ -30,9 +30,9 @@ public class Main {
 
         Video test1 = new Video("test1", FileFormats.MP4, 3);
         Video test2 = new Video("test2", FileFormats.MP4, 3);
-        Video test3 = new Video("test3", FileFormats.MP4, 3);
-        Video test4 = new Video("test4", FileFormats.MP4, 3);
-        Video test5 = new Video("test5", FileFormats.MP4, 3);
+        Audio test3 = new Audio("test3", FileFormats.MP3, 3);
+        Audio test4 = new Audio("test4", FileFormats.MP3, 3);
+        Image test5 = new Image("test5", FileFormats.JPEG);
         MultimediaElement[] test = {test1, test2, test3, test4, test5};
         player(sc, test);
 
@@ -140,6 +140,7 @@ public class Main {
                 if (arr[0] instanceof PlayVolume) manageVolume(sc, arr[0]);
                 if (arr[0] instanceof Brightness) manageBrightness(sc, arr[0]);
                 if (arr[0] instanceof PlayVolume) ((PlayVolume) arr[0]).play();
+                if (arr[0] instanceof Image) imageHandler(sc, arr[0]);
                 System.out.println();
                 player(sc, arr);
             }
@@ -147,6 +148,7 @@ public class Main {
                 if (arr[1] instanceof PlayVolume) manageVolume(sc, arr[1]);
                 if (arr[1] instanceof Brightness) manageBrightness(sc, arr[1]);
                 if (arr[1] instanceof PlayVolume) ((PlayVolume) arr[1]).play();
+                if (arr[1] instanceof Image) imageHandler(sc, arr[1]);
                 System.out.println();
                 player(sc, arr);
             }
@@ -154,6 +156,7 @@ public class Main {
                 if (arr[2] instanceof PlayVolume) manageVolume(sc, arr[2]);
                 if (arr[2] instanceof Brightness) manageBrightness(sc, arr[2]);
                 if (arr[2] instanceof PlayVolume) ((PlayVolume) arr[2]).play();
+                if (arr[2] instanceof Image) imageHandler(sc, arr[2]);
                 System.out.println();
                 player(sc, arr);
             }
@@ -161,6 +164,7 @@ public class Main {
                 if (arr[3] instanceof PlayVolume) manageVolume(sc, arr[3]);
                 if (arr[3] instanceof Brightness) manageBrightness(sc, arr[3]);
                 if (arr[3] instanceof PlayVolume) ((PlayVolume) arr[3]).play();
+                if (arr[3] instanceof Image) imageHandler(sc, arr[3]);
                 System.out.println();
                 player(sc, arr);
             }
@@ -168,6 +172,7 @@ public class Main {
                 if (arr[4] instanceof PlayVolume) manageVolume(sc, arr[4]);
                 if (arr[4] instanceof Brightness) manageBrightness(sc, arr[4]);
                 if (arr[4] instanceof PlayVolume) ((PlayVolume) arr[4]).play();
+                if (arr[4] instanceof Image) imageHandler(sc, arr[4]);
                 System.out.println();
                 player(sc, arr);
             }
@@ -213,5 +218,13 @@ public class Main {
             ((Brightness) el).brightnessDown();
             manageBrightness(sc, el);
         }
+    }
+
+    public static void imageHandler(Scanner sc, MultimediaElement el) {
+        System.out.println();
+        ((Image) el).show();
+        System.out.println("Press Enter when you are done admiring this beautiful piece of art.");
+        sc.nextLine();
+        ((Image) el).close();
     }
 }

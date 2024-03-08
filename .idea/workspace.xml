@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added a volume manager">
+    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added an image handler to player">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709911069237</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added a brightness manager">
+      <option name="closed" value="true" />
+      <created>1709911353480</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709911353480</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +197,8 @@
     <MESSAGE value="added methods for multimedia elements generation in main" />
     <MESSAGE value="coded player main behavior and ran some tests" />
     <MESSAGE value="added a volume manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a volume manager" />
+    <MESSAGE value="added a brightness manager" />
+    <MESSAGE value="added an image handler to player" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an image handler to player" />
   </component>
 </project>
