@@ -1,4 +1,8 @@
 package entities;
 
-public class Image {
+public class Image extends MultimediaElement {
+    // CONSTRUCTORS
+    public Image(String title, FileFormats format) {
+        super(title, format);
+    }
 }
