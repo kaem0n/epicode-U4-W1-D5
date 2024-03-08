@@ -1,4 +1,5 @@
 import entities.*;
+import interfaces.Brightness;
 import interfaces.PlayVolume;
 
 import java.io.File;
@@ -137,30 +138,35 @@ public class Main {
             case "0" -> sc.close();
             case "1" -> {
                 if (arr[0] instanceof PlayVolume) manageVolume(sc, arr[0]);
+                if (arr[0] instanceof Brightness) manageBrightness(sc, arr[0]);
                 if (arr[0] instanceof PlayVolume) ((PlayVolume) arr[0]).play();
                 System.out.println();
                 player(sc, arr);
             }
             case "2" -> {
                 if (arr[1] instanceof PlayVolume) manageVolume(sc, arr[1]);
+                if (arr[1] instanceof Brightness) manageBrightness(sc, arr[1]);
                 if (arr[1] instanceof PlayVolume) ((PlayVolume) arr[1]).play();
                 System.out.println();
                 player(sc, arr);
             }
             case "3" -> {
                 if (arr[2] instanceof PlayVolume) manageVolume(sc, arr[2]);
+                if (arr[2] instanceof Brightness) manageBrightness(sc, arr[2]);
                 if (arr[2] instanceof PlayVolume) ((PlayVolume) arr[2]).play();
                 System.out.println();
                 player(sc, arr);
             }
             case "4" -> {
                 if (arr[3] instanceof PlayVolume) manageVolume(sc, arr[3]);
+                if (arr[3] instanceof Brightness) manageBrightness(sc, arr[3]);
                 if (arr[3] instanceof PlayVolume) ((PlayVolume) arr[3]).play();
                 System.out.println();
                 player(sc, arr);
             }
             case "5" -> {
                 if (arr[4] instanceof PlayVolume) manageVolume(sc, arr[4]);
+                if (arr[4] instanceof Brightness) manageBrightness(sc, arr[4]);
                 if (arr[4] instanceof PlayVolume) ((PlayVolume) arr[4]).play();
                 System.out.println();
                 player(sc, arr);
@@ -188,6 +194,24 @@ public class Main {
         } else if (Objects.equals(value, "down")) {
             ((PlayVolume) el).volumeDown();
             manageVolume(sc, el);
+        }
+    }
+
+    public static void manageBrightness(Scanner sc, MultimediaElement el) {
+        System.out.println();
+        System.out.println("SET THE BRIGHTNESS OF " + el.getFileName());
+        System.out.println("Current brightness: " + ((Brightness) el).getBrightness()  + " (min: 1 - max: 10)");
+        System.out.println("Instructions:");
+        System.out.println("- Type \"up\" and press Enter to set up the brightness (+1)");
+        System.out.println("- Type \"down\" and press Enter to set down the brightness (-1)");
+        System.out.println("- Press Enter to go next");
+        String value = sc.nextLine();
+        if (Objects.equals(value, "up")) {
+            ((Brightness) el).brightnessUp();
+            manageBrightness(sc, el);
+        } else if (Objects.equals(value, "down")) {
+            ((Brightness) el).brightnessDown();
+            manageBrightness(sc, el);
         }
     }
 }
