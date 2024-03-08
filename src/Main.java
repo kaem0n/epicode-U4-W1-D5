@@ -1,9 +1,6 @@
 import entities.*;
 import interfaces.Brightness;
 import interfaces.PlayVolume;
-
-import java.io.File;
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -12,61 +9,21 @@ public class Main {
         System.out.println();
         final Scanner sc = new Scanner(System.in);
 
-//        System.out.println("INSERT 5 MULTIMEDIA ELEMENTS");
-//        System.out.println();
-//        System.out.println("Insert a video...");
-//        Video video1 = createVideo(sc);
-//        System.out.println("Insert a video...");
-//        Video video2 = createVideo(sc);
-//        System.out.println("Insert an audio...");
-//        Audio audio1 = createAudio(sc);
-//        System.out.println("Insert an audio...");
-//        Audio audio2 = createAudio(sc);
-//        System.out.println("Insert an image...");
-//        Image image = createImage(sc);
-//
-//        MultimediaElement[] media = {video1, video2, audio1, audio2, image};
-//        player(sc, media);
+        System.out.println("INSERT 5 MULTIMEDIA ELEMENTS");
+        System.out.println();
+        System.out.println("Insert a video...");
+        Video video1 = createVideo(sc);
+        System.out.println("Insert a video...");
+        Video video2 = createVideo(sc);
+        System.out.println("Insert an audio...");
+        Audio audio1 = createAudio(sc);
+        System.out.println("Insert an audio...");
+        Audio audio2 = createAudio(sc);
+        System.out.println("Insert an image...");
+        Image image = createImage(sc);
 
-        Video test1 = new Video("test1", FileFormats.MP4, 3);
-        Video test2 = new Video("test2", FileFormats.MP4, 3);
-        Audio test3 = new Audio("test3", FileFormats.MP3, 3);
-        Audio test4 = new Audio("test4", FileFormats.MP3, 3);
-        Image test5 = new Image("test5", FileFormats.JPEG);
-        MultimediaElement[] test = {test1, test2, test3, test4, test5};
-        player(sc, test);
-
-//        TESTS
-
-//        Video test1 = new Video("test1", FileFormats.MP4, 60);
-//        System.out.println(test1.brightnessLevel() + "; " + test1.volumeLevel());
-//        test1.brightnessDown();
-//        test1.volumeUp();
-//        System.out.println(test1.brightnessLevel() + "; " + test1.volumeLevel());
-//        test1.brightnessUp();
-//        test1.brightnessUp();
-//        test1.brightnessUp();
-//        test1.volumeDown();
-//        test1.volumeDown();
-//        System.out.println(test1.brightnessLevel() + "; " + test1.volumeLevel());
-//        test1.play();
-//        System.out.println();
-//        Audio test2 = new Audio("test2", FileFormats.MP3, 10);
-//        System.out.println(test2.volumeLevel());
-//        test2.volumeUp();
-//        test2.volumeUp();
-//        System.out.println(test2.volumeLevel());
-//        test2.volumeDown();
-//        test2.volumeDown();
-//        test2.volumeDown();
-//        System.out.println(test2.volumeLevel());
-//        test2.play();
-//        System.out.println();
-//        Image test3 = new Image("test3", FileFormats.JPEG);
-//        test3.brightnessUp();
-//        test3.brightnessUp();
-//        test3.show();
-//        test3.close();
+        MultimediaElement[] media = {video1, video2, audio1, audio2, image};
+        player(sc, media);
     }
 
     public static Video createVideo(Scanner sc) {
@@ -129,10 +86,11 @@ public class Main {
     }
 
     public static void player(Scanner sc, MultimediaElement[] arr) {
-        System.out.println("Select a media (type the corresponding number; type 0 to exit:");
+        System.out.println("Select a media (type the corresponding number):");
         for (int i = 0; i < arr.length; i++) {
             System.out.println(i + 1 + " - " + arr[i].getFileName());
         }
+        System.out.println("0 - Exit the program");
         String value = sc.nextLine();
         switch (value) {
             case "0" -> sc.close();
