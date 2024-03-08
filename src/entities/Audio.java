@@ -14,6 +14,7 @@ public class Audio extends MultimediaElement implements PlayVolume {
         this.seconds = seconds;
     }
 
+    // METHODS
     @Override
     public void play() {
         for (int i = seconds; i > 0 ; i--) {
