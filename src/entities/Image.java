@@ -18,7 +18,7 @@ public class Image extends MultimediaElement implements Brightness {
     }
 
     public void close() {
-        System.out.println(this.getFileName() + " closed.");
+        System.out.println(this.getFileName() + " closed..");
     }
 
     @Override
