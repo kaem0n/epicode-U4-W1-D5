@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="code Audio class behavior, ran some tests on main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Image.java" afterDir="false" />
-    </list>
+    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added missing comment to Audio" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709895102342</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="code Image class behavior, ran some tests on main">
+      <option name="closed" value="true" />
+      <created>1709896069258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709896069258</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added missing comment to Audio">
+      <option name="closed" value="true" />
+      <created>1709896104807</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709896104807</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +117,8 @@
     <MESSAGE value="initial project structure created" />
     <MESSAGE value="added methods to interfaces and coded MultimediaElement and Video classes behavior" />
     <MESSAGE value="code Audio class behavior, ran some tests on main" />
-    <option name="LAST_COMMIT_MESSAGE" value="code Audio class behavior, ran some tests on main" />
+    <MESSAGE value="code Image class behavior, ran some tests on main" />
+    <MESSAGE value="added missing comment to Audio" />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing comment to Audio" />
   </component>
 </project>

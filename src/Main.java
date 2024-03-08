@@ -34,5 +34,6 @@ public class Main {
         test3.brightnessUp();
         test3.brightnessUp();
         test3.show();
+        test3.close();
     }
 }

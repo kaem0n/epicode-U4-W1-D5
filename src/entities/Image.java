@@ -17,6 +17,10 @@ public class Image extends MultimediaElement implements Brightness {
         System.out.println(this.getFileName() + " showing...; " + this.brightnessLevel());
     }
 
+    public void close() {
+        System.out.println(this.getFileName() + " closed.");
+    }
+
     @Override
     public void brightnessUp() {
         if (brightness < 10) {
