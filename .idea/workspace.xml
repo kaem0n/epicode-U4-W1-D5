@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added missing comment to Audio" />
+    <list default="true" id="b0a20df2-2ef5-4686-9f41-0a2a43259e90" name="Changes" comment="added close() method to Image and tested it on main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +24,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kaem0n"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4d005bca-ab8e-4ff6-a78a-89ec19f78b2a" />
+        <option name="url" value="https://github.com/kaem0n/epicode-U4-W1-D5.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -109,7 +126,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709896104807</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added close() method to Image">
+      <option name="closed" value="true" />
+      <created>1709896251117</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709896251117</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added close() method to Image and tested it on main">
+      <option name="closed" value="true" />
+      <created>1709896324111</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709896324111</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added close() method to Image and tested it on main">
+      <option name="closed" value="true" />
+      <created>1709896425909</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709896425909</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +160,8 @@
     <MESSAGE value="code Audio class behavior, ran some tests on main" />
     <MESSAGE value="code Image class behavior, ran some tests on main" />
     <MESSAGE value="added missing comment to Audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing comment to Audio" />
+    <MESSAGE value="added close() method to Image" />
+    <MESSAGE value="added close() method to Image and tested it on main" />
+    <option name="LAST_COMMIT_MESSAGE" value="added close() method to Image and tested it on main" />
   </component>
 </project>
